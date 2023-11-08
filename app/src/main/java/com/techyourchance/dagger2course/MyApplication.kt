@@ -7,7 +7,7 @@ import com.techyourchance.dagger2course.common.dependnecyinjection.app.DaggerApp
 
 class MyApplication: Application() {
 
-    public val appComponent: AppComponent by lazy {
+    val appComponent: AppComponent by lazy {
         DaggerAppComponent.builder()
                 .appModule(AppModule(this))
                 .build()
